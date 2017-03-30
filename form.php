@@ -16,10 +16,12 @@ function index($city) {
     $dataWeather = searchWeather($city);
     $track = getPlaylist ($dataWeather['weather'][0]['description']);
 
-    $condition = $dataWeather['weather'][0]['description'] . '<br>';
+    $condition = $dataWeather['weather'][0]['description'];
     $temperature = $dataWeather['main']['temp'] . ' ℃';
     $icon = $dataWeather['weather'][0]['icon'];
     $ville = $dataWeather['name'];
+    $pays = $dataWeather['sys']['country'];
+
     include "index.php";
 }
 

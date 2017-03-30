@@ -1,29 +1,53 @@
-/*!*.row.no-gutters {*!*/
-  /*!*margin-right: 0;*!*/
-  /*!*margin-left: 0;*!*/
-/*}*/
-
 body
 {
-    background-image: url("http://whd.erth.biz/wp-content/uploads/nature/Sky-colors-weather-clouds-landscape-high-resolution-1600x900.jpg");
+    background-image: url("images/clear-sky.jpeg");
     background-size: cover;
 }
 
-/*.no-padding > [class*='col-'] {*/
-    /*padding-right:0;*/
-    /*padding-left:0;*/
-/*}*/
+.clear-sky
+{
+    background-image: url("images/clear-sky.jpeg");
+}
 
+.few-clouds
+{
+    background-image: url("http://whd.erth.biz/wp-content/uploads/nature/Sky-colors-weather-clouds-landscape-high-resolution-1600x900.jpg");
+}
 
-/*.container-fluid img{*/
-    /*position: absolute;*/
-    /*margin: 0;*/
-    /*padding: 0;*/
-    /*height: 100%;*/
-    /*width: 99%;*/
-/*}*/
+.scattered-clouds
+{
+    background-image: url("images/scattered-clouds.jpeg ");
+}
 
+.broken-clouds
+{
+    background-image: url("images/broken-clouds.jpeg");
+}
 
+.shower-rain
+{
+    background-image: url("images/shower-rain.jpeg");
+}
+
+.rain
+{
+    background-image: url("images/rain.jpeg");
+}
+
+.thunderstorm
+{
+    background-image: url("images/thunderstorm.jpeg");
+}
+
+.snow
+{
+    background-image: url("images/snow.jpeg");
+}
+
+.mist
+{
+    background-image: url("images/mist.jpeg");
+}
 
 .title
 {
@@ -32,25 +56,4 @@ body
     font-size: 70px;
     margin-left : 70px;
     position: relative;
-}
-
-.form-group h2{
-    font-family: 'Rationale', sans-serif;
-    color: #FFF;
-    margin-left : 220px;
-    position: relative;
-}
-
-/*.info-bar{*/
-    /*background-repeat: no-repeat;*/
-/*}*/
-
-.info-bar img{
-    margin-left: 130px;
-    }
-
-.weather {
-    background-color: #FFFFFF;
-    color: black;
-    text-align: center;
 }
