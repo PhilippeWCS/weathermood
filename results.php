@@ -1,0 +1,1 @@
+<div class="deezer-widget-player" data-src=<?php echo "https://www.deezer.com/plugins/player?format=classic&autoplay=true&playlist=false&emptyPlayer=false&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id=" . $track . "&app_id=1"; ?> data-scrolling="no" data-frameborder="0" data-allowTransparency="true" data-width="700" data-height="350"></div>
