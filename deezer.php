@@ -12,8 +12,11 @@
     require_once "classes/DeezerAPI.php";
 
     $apiDeezer = new \classes\DeezerAPI();
-    $data = json_decode($apiDeezer->search("clear+sky"));
+    $data = json_decode($apiDeezer->search("clear+sky"), true);
 
-    $id = $data->data[0]->id;
+    foreach ($data as $test) {
+        foreach ($test as $list){
+            echo $list["id"] . "<br>";
+        }
+    }
 
-    var_dump($id);
