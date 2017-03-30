@@ -23,7 +23,6 @@ public function __construct($city)
     self::$currentUrl = self::$site;
     $this->_city=$city;
     self::$currentUrl.=$this->_city.self::$apiKey.self::$units;
-    echo self::$currentUrl;
     }
 
     public function getWeather(){
