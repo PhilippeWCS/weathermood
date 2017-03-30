@@ -1,36 +1,50 @@
-@charset "UTF-8";
-
-*{
-margin : 0;
-padding: 0;
-}
-
 .row.no-gutters {
   margin-right: 0;
   margin-left: 0;
 }
 
-.row.no-gutters > [class^="col-"],
-.row.no-gutters > [class*=" col-"] {
-  padding-right: 0;
-  padding-left: 0;
+body
+{
+    background-image: url("http://whd.erth.biz/wp-content/uploads/nature/Sky-colors-weather-clouds-landscape-high-resolution-1600x900.jpg");
+    background-size: cover;
+}
+
+.no-padding > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
 }
 
 
-.container-fluid{
-    background-color: rgb(36, 36, 46);
+.container-fluid img{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 99%;
 }
 
-.container-fluid{
-  background-color:rgb(36, 36, 46);
+
+
+.title
+{
+    font-family: 'Rationale', sans-serif;
+    color: #FFF;
+    font-size: 70px;
+    margin-left : 70px;
+    position: relative;
 }
 
-.form-group h1{
+.form-group h2{
     font-family: 'Rationale', sans-serif;
     color: #FFF;
     margin-left : 220px;
+    position: relative;
 }
 
-.music-player{
-  margin-top: 200px;
-  margin-left: 400px;
+.info-bar{
+    background-repeat: no-repeat;
+}
+
+.info-bar img{
+    margin-left: 130px;
+    }
