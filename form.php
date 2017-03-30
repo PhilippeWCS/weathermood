@@ -5,10 +5,6 @@
  * Date: 30/03/17
  * Time: 14:34
  */
-
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
 require_once "classes/WeatherAPI.php";
 require_once "classes/DeezerAPI.php";
 
