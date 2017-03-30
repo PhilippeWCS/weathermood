@@ -11,7 +11,7 @@ ini_set('display_errors', 1);
 
 require_once "classes/WeatherAPI.php";
 
-$url = new \classes\WeatherAPI('London');
+$url = new \classes\WeatherAPI($city);
 $data = json_decode($url->getWeather(), true);
 var_dump($data);
 
