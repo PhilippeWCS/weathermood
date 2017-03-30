@@ -15,4 +15,3 @@
     $data = json_decode($apiDeezer->search("sun"));
 
     $playlist = $data->data[0]->id;
-    var_dump($playlist);
