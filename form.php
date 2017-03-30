@@ -12,13 +12,14 @@ ini_set('display_errors', 1);
 require_once "classes/WeatherAPI.php";
 require_once "classes/DeezerAPI.php";
 
-if (isset($_POST["searchcity"])) {
+if (!empty($_POST["searchcity"])) {
     index($_POST["searchcity"]);
 }
 
 function index($city) {
     $dataWeather = searchWeather($city);
-    $playList = getPlaylist ($dataWeather['weather'][0]['description']);
+    $track = getPlaylist ($dataWeather['weather'][0]['description']);
+    include "index.php";
 }
 
 function searchWeather($city) {
@@ -26,10 +27,13 @@ function searchWeather($city) {
     $data = json_decode($url->getWeather(), true);
 
     return $data;
+}
 
+function getPlaylist($weatherDescript){
+    $apiDeezer = new \classes\DeezerAPI();
+    $data =  json_decode($apiDeezer->search($weatherDescript));
+    $track = $data->data[0]->id;
 
-    //$description = $data['weather'][0]['description'] . '<br>';
-    //$tempmain = $data['main']['temp'] . ' ℃';
-
+    return $track;
 }
 

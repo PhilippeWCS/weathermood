@@ -12,6 +12,8 @@
     require_once "classes/DeezerAPI.php";
 
     $apiDeezer = new \classes\DeezerAPI();
-    $data = json_decode($apiDeezer->search("sun"));
+    $data = json_decode($apiDeezer->search("clear+sky"));
 
-    $playlist = $data->data[0]->id;
+    $id = $data->data[0]->id;
+
+    var_dump($id);
