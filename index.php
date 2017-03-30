@@ -1,7 +1,9 @@
-<?php>
+<?php
 
+include('searchWeather.php');
+include('deezer.php');
 
-<>
+?>
 
 <!DOCTYPE html>
 <html>
@@ -29,7 +31,7 @@
         <div class="city-bar">
             <div class="row no-gutters">
                 <div class="col-xs-offset-4 col-xs-4 col-xs-offset-4">
-                    <form>
+                    <form action="form.php" method="POST">
                         <div class="form-group">
                             <label for="formGroupExampleInput"><h1>CITY</h1></label>
                             <input type="text" class="form-control" id="formGroupExampleInput" name="searchcity" placeholder="City ...">
