@@ -19,6 +19,10 @@ if (!empty($_POST["searchcity"])) {
 function index($city) {
     $dataWeather = searchWeather($city);
     $track = getPlaylist ($dataWeather['weather'][0]['description']);
+
+    $condition = $dataWeather['weather'][0]['description'] . '<br>';
+    $temperature = $dataWeather['main']['temp'] . ' ℃';
+
     include "index.php";
 }
 
