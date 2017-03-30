@@ -12,7 +12,7 @@ namespace classes;
 class DeezerAPI
 {
 
-    private static $apiUrl = "https://api.deezer.com/";
+    private static $apiUrl = "http://api.deezer.com/";
     private static $currentURL = "";
 
     public function __construct(){
@@ -22,7 +22,8 @@ class DeezerAPI
     public function search($search){
 
         if (isset($search)){
-            self::$currentURL .=  "search/playlist?q=" . $search;
+            $search = str_replace(" ", "+", $search);
+            self::$currentURL .=  "search/track?q=" . $search;
 
             return $this->getData();
         }
