@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+*{
+margin : 0;
+padding: 0;
+}
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+
+.container-fluid{
+    background-color: rgb(36, 36, 46);
+}
+
+.container-fluid{
+  background-color:rgb(36, 36, 46);
+}
+
+.form-group h1{
+    font-family: 'Rationale', sans-serif;
+    color: #FFF;
+    margin-left : 220px;
+}
+
+.music-player{
+  margin-top: 200px;
+  margin-left: 400px;
