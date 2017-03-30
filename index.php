@@ -1,7 +1,6 @@
 <?php
-
     require_once "deezer.php";
-
+    require_once "searchWeather.php";
 ?>
 
 <!DOCTYPE html>
@@ -30,10 +29,10 @@
         <div class="city-bar">
             <div class="row no-gutters">
                 <div class="col-xs-offset-4 col-xs-4 col-xs-offset-4">
-                    <form>
+                    <form name="searchcity" action="form.php" method="POST">
                         <div class="form-group">
                             <label for="formGroupExampleInput"><h1>CITY</h1></label>
-                            <input type="text" class="form-control" id="formGroupExampleInput" name="searchcity" placeholder="City ...">
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="City ...">
                         </div>
                         <div class="button">
                             <a><button type="button" class="btn btn-primary">SEARCH &raquo;</button></a>
