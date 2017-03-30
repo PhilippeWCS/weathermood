@@ -22,7 +22,8 @@ function index($city) {
 
     $condition = $dataWeather['weather'][0]['description'] . '<br>';
     $temperature = $dataWeather['main']['temp'] . ' ℃';
-
+    $icon = $dataWeather['weather'][0]['icon'];
+    $ville = $dataWeather['name'];
     include "index.php";
 }
 
