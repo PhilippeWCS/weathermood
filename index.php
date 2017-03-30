@@ -41,6 +41,7 @@
 
         <?php
             if (isset($track)){
+                var_dump($track);
                 require_once "results.php";
             }
         ?>

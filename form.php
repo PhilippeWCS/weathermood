@@ -36,9 +36,15 @@ function searchWeather($city) {
 
 function getPlaylist($weatherDescript){
     $apiDeezer = new \classes\DeezerAPI();
-    $data =  json_decode($apiDeezer->search($weatherDescript));
-    $track = $data->data[0]->id;
+    $data =  json_decode($apiDeezer->search($weatherDescript), true);
+    $pistes = "";
 
-    return $track;
+    foreach ($data as $track) {
+        foreach ($track as $value){
+            $pistes .= $value["id"] .",";
+        }
+    }
+
+    return $pistes;
 }
 
